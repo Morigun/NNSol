@@ -1,0 +1,8 @@
+C:\MyDOC\Проекты\C#\Developer\NNSol\NNSol\bin\Debug\NNSol.exe.config
+C:\MyDOC\Проекты\C#\Developer\NNSol\NNSol\bin\Debug\NNSol.exe
+C:\MyDOC\Проекты\C#\Developer\NNSol\NNSol\bin\Debug\NNSol.pdb
+C:\MyDOC\Проекты\C#\Developer\NNSol\NNSol\obj\Debug\ResolveAssemblyReference.cache
+C:\MyDOC\Проекты\C#\Developer\NNSol\NNSol\obj\Debug\NNSol.exe
+C:\MyDOC\Проекты\C#\Developer\NNSol\NNSol\obj\Debug\NNSol.pdb
+C:\MyDOC\Проекты\C#\Developer\NNSol\NNSol\bin\Debug\ComLibTools.dll
+C:\MyDOC\Проекты\C#\Developer\NNSol\NNSol\bin\Debug\ComLibTools.pdb

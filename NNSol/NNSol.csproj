@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{5425801C-5B26-4771-B2D6-A4CCED0FAC58}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>NNSol</RootNamespace>
+    <AssemblyName>NNSol</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ComLibTools">
+      <HintPath>..\..\ComLibTools\ComLibTools\bin\Debug\ComLibTools.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CommandParser.cs" />
+    <Compile Include="Command\CALCCommand.cs" />
+    <Compile Include="Command\DESERCommand.cs" />
+    <Compile Include="Command\Executor.cs" />
+    <Compile Include="Command\HELPCommand.cs" />
+    <Compile Include="Command\LEARNCommand.cs" />
+    <Compile Include="Command\RECURSE_LEARNCommand.cs" />
+    <Compile Include="Command\SERCommand.cs" />
+    <Compile Include="Command\SKIP_INFOCommand.cs" />
+    <Compile Include="Command\VIEW_INFOCommand.cs" />
+    <Compile Include="Core\NNCore.cs" />
+    <Compile Include="NClass\INeuron.cs" />
+    <Compile Include="NClass\NeuroNet.cs" />
+    <Compile Include="NClass\NeuronLayer.cs" />
+    <Compile Include="NClass\Neurons\BiasNeuron.cs" />
+    <Compile Include="NClass\Neurons\HiddenNeuron.cs" />
+    <Compile Include="NClass\Neurons\InNeuron.cs" />
+    <Compile Include="NClass\Neurons\OutNeuron.cs" />
+    <Compile Include="NClass\Synapse.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="NClass" />
+    <Folder Include="NClass\Neurons" />
+    <Folder Include="Command" />
+    <Folder Include="Core" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
